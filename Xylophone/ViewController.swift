@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     func animateButton(button: UIButton) {
         setButtonAlpha(object: button, alphaValue: 0.5)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {self.setButtonAlpha(object: button, alphaValue: 1.0)})
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {self.setButtonAlpha(object: button, alphaValue: 1.0)})
     }
     
     func setButtonAlpha(object: UIButton, alphaValue: CGFloat) {
